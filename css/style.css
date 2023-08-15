@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding:0;
+}
+.continer{
+    width: 700px;
+    margin: 20px auto;
+    border: 2px solid #eee;
+    direction: rtl;
+}
+.creat{
+    background-color: #eaebef66;
+}
+.creat h5{
+    padding: 10px;
+    border-bottom: 2px solid #eaebef;
+    font-size: 17px;
+}
+.post{
+    border: 1px solid #eee;
+    position: relative;
+    padding: 10px;
+}
+.post img{
+    width: 40px;
+}
+.post textarea{
+    resize: none;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+.post .imog{
+    direction: ltr;
+}
+.post .imog i{
+    font-size: 20px;
+    margin-right: 7px;
+
+}
+.post .felling span{
+    display: inline-block;
+    padding: 5px 10px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.post .felling > span:last-child{
+    color: #222;
+    cursor: pointer;
+
+}
+
+.post .images{
+    position: absolute;
+    right: 85px;
+    background-color: white;
+    width: 250px;
+    height: 220px;
+    padding: 10px;
+    box-shadow: 0 0 10px 1px #ccc;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    overflow-y: scroll;
+    direction: ltr;
+    text-align: right
+}
+
+.post .images div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.post .images div i{
+font-size: 30px;
+    color: #fcd671;
+}
+.post .images p{
+    padding: 5px;
+    font-size: 18px;
+}
+.post .tolls{
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+.post .tolls div{
+    display: flex;
+    background-color: #f7f7f9;
+    border-radius: 16px;
+    padding: 8px 15px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+    .post .tolls div i{
+    color: #365898;
+    font-size: 18px;
+}
+.post .tolls div:last-child i{
+
+    color: #d95e76;
+}
+.share{
+    padding: 15px;
+    background-color: #eaebef6e;
+}
+.share button{
+    width: 100%;
+    border: none;
+    padding: 6px 10px;
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #365898;
+    cursor: pointer;
+}
