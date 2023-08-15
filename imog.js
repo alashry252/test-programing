@@ -123,13 +123,23 @@ let users={
     }
 
 }
+//function To chick The Element Found
+    function chick(){
+        let elementClass=document.querySelector(".post .images")
+        if(elementClass){
+            elementClass.remove()
 
+        }
+    }
 // feeling click
 feelIcon.onclick=function(){
     fell.textContent="اشعر ب"
     whatFell.textContent="بم تشعر؟"
     fell.style="background-color:#3658983d"
+    chick()
     createOption()
+    
+
 }
 
 //Function To  Create The Element To Feeling Object
@@ -182,10 +192,10 @@ function Contry(){
 local.onclick=function(){
     whatFell.textContent=""
     fell.textContent=""
-
+    
+    chick()
     Contry()
 }
-
 
 //Function To  Create The Element To users
 
@@ -214,5 +224,8 @@ function theUsers(){
 user.onclick=function(){
     whatFell.textContent=""
     fell.textContent=""
+    chick()
     theUsers()
+
+
 }
