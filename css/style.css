@@ -4,7 +4,7 @@
     padding:0;
 }
 .continer{
-    width: 700px;
+    max-width: 700px;
     margin: 20px auto;
     border: 2px solid #eee;
     direction: rtl;
@@ -74,7 +74,7 @@
     text-align: right
 }
 
-.post .images div{
+.post .images li{
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -83,7 +83,7 @@
     cursor: pointer;
 }
 
-.post .images div i{
+.post .images li i{
 font-size: 30px;
     color: #fcd671;
 }
@@ -97,6 +97,12 @@ font-size: 30px;
     padding: 10px;
     border-top: 1px solid #eee;
 }
+@media (max-width:767px){
+.post .tolls{
+    gap: 7px;
+    padding: 5px
+}
+}
 .post .tolls div{
     display: flex;
     background-color: #f7f7f9;
@@ -107,9 +113,21 @@ font-size: 30px;
     gap: 5px;
     cursor: pointer;
 }
+@media (max-width:767px){
+    .post .tolls div{
+        gap: 1px;
+        padding: 2px 15px;
+        flex-direction: column;
+    }
+}
     .post .tolls div i{
     color: #365898;
     font-size: 18px;
+}
+@media (max-width:767px){
+    .post .tolls div i{
+        font-size: 14px;
+    }
 }
 .post .tolls div:last-child i{
 
